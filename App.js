@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
 
   title: {
     fontSize: 25,
-    margin: 15,
+    margin: 20,
     fontWeight: 'bold',
     marginBottom: 10,
   },
@@ -28,6 +28,7 @@ const styles = StyleSheet.create({
   image: {
     width: 350,
     height: 350,
+    padding: 10,
     borderRadius: 10,
   },
 });
