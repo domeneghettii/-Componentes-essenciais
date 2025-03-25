@@ -1,11 +1,11 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, Image, View } from 'react-native';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <Text>Olá, Luana Domeneghetti por aqui e eu amo a série Diários de um Vampiro!</Text>
+      <Text>DIÁRIOS DE UM VAMPIRO</Text>
+      <Image style={styles.image} source = {require('./assets/image/fototvd.jpg')} />
     </View>
   );
 }
@@ -13,8 +13,23 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#fae8e0',
     alignItems: 'center',
     justifyContent: 'center',
   },
+
+  title: {
+    fontSize: 25,
+    margin: 15,
+    fontWeight: 'bold',
+    marginBottom: 10,
+  },
+
+  image: {
+    width: 350,
+    height: 350,
+    borderRadius: 10,
+  },
 });
+
+
