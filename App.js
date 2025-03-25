@@ -1,11 +1,12 @@
-import { StyleSheet, Text, Image, View } from 'react-native';
+import React from "react";
+import {View, Text, Image, StyleSheet} from 'react-native';
 
 export default function App() {
   return (
     <View style={styles.container}>
       <Text>Olá, Luana Domeneghetti por aqui e eu amo a série Diários de um Vampiro!</Text>
       <Text>DIÁRIOS DE UM VAMPIRO</Text>
-      <Image style={styles.image} source = {require('./assets/image/fototvd.jpg')} />
+      <Image style={styles.imagem} source = {require('./assets/image/fototvd.jpg')} />
     </View>
   );
 }
@@ -25,7 +26,7 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
 
-  image: {
+  imagem: {
     width: 350,
     height: 350,
     padding: 10,
